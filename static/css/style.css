@@ -910,6 +910,12 @@ td .false {
     font-size: 1.5em;
   }
 }
+@media screen and (min-device-width: 800px) {
+  .result, #footer {
+    width: 780px;
+    margin: 10px auto;
+  }
+}
 
 @media screen and (min-device-width: 1280px) {
   .main {

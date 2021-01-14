@@ -1,3 +1,13 @@
+Piculator Gamma
+===============
+
+This is a modified version of the original SymPy Gamma.
+
+I've done some modifications to adapt it to piculator's hardware.
+
+*The original README is below:*
+-------------------------------
+
 SymPy Gamma
 ===========
 
