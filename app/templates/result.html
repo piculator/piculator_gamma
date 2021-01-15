@@ -6,10 +6,10 @@
 
     {% block content %}
         <div class="input">
-            <h1><a href="/">
+            <h1><a href="/" style="vertical-align: middle;">
                     <img src="{{ MEDIA_URL }}images/logo.png"
-                         alt="Piculator Gamma logo" width="75" height="50" />
-                    Piculator Gamma
+                         alt="Piculator Gamma logo" />
+                    Gamma
             </a></h1>
             <form action="/input/" method="GET">
                 {{ form.i }}<input class="input_field" type="submit" value="=" />
@@ -23,7 +23,6 @@
                 See what <a class="wolfram"
                 href="https://www.wolframalpha.com/input/?i={{input|urlencode}}">
                     Wolfram|Alpha</a> has to say.
-                <p>{{ promote_live|safe }}</p>
             </div>
          </div>
 {% endblock %}

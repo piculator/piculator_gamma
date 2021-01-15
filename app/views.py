@@ -23,7 +23,7 @@ import traceback
 import logging
 
 
-ndb_client = models.ndb_client
+# ndb_client = models.ndb_client
 
 
 class MobileTextInput(forms.widgets.TextInput):
@@ -42,7 +42,7 @@ class SearchForm(forms.Form):
 def app_meta(view):
     def _wrapper(request, *args, **kwargs):
         result = view(request, *args, **kwargs)
-        version = os.environ['GAE_VERSION']
+        version = "GAE not available."
 
         try:
             template, params = result
@@ -69,8 +69,10 @@ def index(request):
 
 
 def input_exists(input):
-    with ndb_client.context():
-        return models.Query.query(models.Query.text == input).get()
+    # todo : recover the functionality
+    return False
+    # with ndb_client.context():
+    #     return models.Query.query(models.Query.text == input).get()
 
 
 @app_meta
@@ -95,19 +97,19 @@ def input(request):
                 }]
 
             if not input_exists(input):
+                # todo: recover the functionality.
                 logging.info('Input does not exists')
-                with ndb_client.context():
-                    query = models.Query(text=input, user_id=None)
-                    logging.info('query: %s' % query)
-                    query.put()
+                # with ndb_client.context():
+                #    query = models.Query(text=input, user_id=None)
+                #    logging.info('query: %s' % query)
+                #    query.put()
 
             # For some reason the |random tag always returns the same result
             return ("result.html", {
                 "input": input,
                 "result": r,
                 "form": form,
-                "MEDIA_URL": settings.STATIC_URL,
-                "promote_live": random.choice(LIVE_PROMOTION_MESSAGES)
+                "MEDIA_URL": settings.STATIC_URL
                 })
 
 
@@ -238,8 +240,10 @@ def get_card_full(request, card_name):
 
 
 def find_text_query(query):
-    with ndb_client.context():
-        return models.Query.query(models.Query.text == query.text)
+    # todo : recover the functionality
+    pass
+    # with ndb_client.context():
+    #    return models.Query.query(models.Query.text == query.text)
 
 
 @app_meta

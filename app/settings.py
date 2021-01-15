@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '.sympygamma.com',
     '.sympy.org',
-    '.appspot.com'
+    '.appspot.com',
 ]
 
 

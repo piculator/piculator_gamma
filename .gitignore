@@ -39,3 +39,4 @@ client-secret.json
 
 # app engine lib
 lib
+/.vscode/

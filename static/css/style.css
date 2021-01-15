@@ -1,9 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
-@import url(https://fonts.googleapis.com/css?family=Gentium+Basic&text=SymPy%20Gamma);
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 100%;
   padding: 0;
   margin: 0;
@@ -16,11 +12,11 @@ pre, ul, button, h2, h3, h4, input, label {
 }
 
 pre {
-  font-family: "Droid Sans Mono", monospace;
+  font-family: monospace;
 }
 
 h1 {
-  font-family: 'Gentium Basic', serif;
+  font-family: sans-serif;
   font-weight: normal;
   color: #FFF;
   margin: 0;
@@ -42,7 +38,7 @@ h1 a img {
 
 .menu {
   padding: 0 0.5em;
-  font-family: "Open Sans", sans-serif;
+  font-family: sans-serif;
   border-bottom: 1px solid #81B953;
   background: #002200;
 }
@@ -127,7 +123,7 @@ h1 a img {
   overflow-x: auto;
   overflow-y: visible;
   -webkit-overflow-scrolling: touch;
-  font-family: 'Droid Sans Mono', monospace;
+  font-family: monospace;
   text-align: center;
 }
 
@@ -152,7 +148,7 @@ h1 a img {
 
 .card_options_toggle {
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: smaller;
   display: inline-block;
 }
@@ -177,7 +173,7 @@ h1 a img {
 .result_card .card_options {
   border-top: 1px solid #777;
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   text-align: left;
 }
 
@@ -193,7 +189,7 @@ h1 a img {
 
 .result_variables {
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 
 .result_variables li {
@@ -235,7 +231,7 @@ h1 a img {
 }
 
 .input input[type="text"] {
-  font-family: 'Droid Sans Mono', monospace;
+  font-family: monospace;
   width: 82%;
   height: 1.5em;
   font-size: 1.25em;
@@ -248,7 +244,7 @@ h1 a img {
 .input input[type="submit"] {
   border-radius: 0;
   vertical-align: top;
-  font-family: 'Droid Sans Mono', monospace;
+  font-family: monospace;
   width: 15%;
   height: 1.5em;
   font-size: 1.25em;
@@ -340,7 +336,7 @@ h1 a img {
   color: #3B5526;
   width: 70%;
   display: inline-block;
-  font-family: 'Droid Sans Mono', monospace;
+  font-family: monospace;
 }
 
 .col.recent a.remove {
@@ -351,9 +347,6 @@ h1 a img {
 
 .col.recent li:hover a.remove {
   display: block;
-}
-
-.col.example {
 }
 
 .example-group {
@@ -408,7 +401,7 @@ h1 a img {
 .example-group a:hover, .example-group a:active {
   text-decoration: none;
   color: #3B5526;
-  font-family: 'Droid Sans Mono', monospace;
+  font-family: monospace;
 }
 
 .example-group li > span {
@@ -452,7 +445,7 @@ p {
 #random-example, button {
   cursor: pointer;
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   border: 1px solid #552634;
   color: #FFF;
   padding: 0.25em;
@@ -553,7 +546,7 @@ button {
 
 .factorization-diagram p {
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: smaller;
   margin: 0;
   padding: 0;
@@ -564,7 +557,7 @@ button {
 .document {
   text-align: left;
   font-size: 0.9em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 
 .document p {
@@ -616,7 +609,7 @@ button {
 .steps {
   text-align: left;
   font-size: 0.9em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   max-width: 1600px;
   overflow: auto;
   margin: auto;
