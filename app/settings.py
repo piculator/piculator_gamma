@@ -13,9 +13,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 from django.core.management.utils import get_random_secret_key
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -31,8 +31,9 @@ ALLOWED_HOSTS = [
     '.sympygamma.com',
     '.sympy.org',
     '.appspot.com',
+    '.kxxt.tech',
+    '192.168.0.232'
 ]
-
 
 # Application definition
 
@@ -76,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'app.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -106,7 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -120,12 +119,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 # MEDIA_URL = '/static/'
-STATIC_URL = '/static/'
+STATIC_URL = 'http://localhost:11111/gamma/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),

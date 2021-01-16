@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 from django.conf.urls import url
-
-from app import views
+from django.views.static import serve
+from app import views,settings
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -13,6 +13,7 @@ p = os.path.join(os.path.dirname(__file__), 'media/')
 urlpatterns = [
     # Example:
     # (r'^notebook/', include('notebook.foo.urls')),
+    url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.BASE_DIR + '/static/'}, name='static'),
     url(r'^$', views.index),
 
     url(r'^input/', views.input),
