@@ -6,6 +6,6 @@ cd piculator_gamma
 pip3 install virtualenv
 virtualenv -p /bin/python3 venv
 source venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ./start-gamma.sh
 ```
