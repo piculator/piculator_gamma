@@ -31,8 +31,7 @@ ALLOWED_HOSTS = [
     '.sympygamma.com',
     '.sympy.org',
     '.appspot.com',
-    '.kxxt.tech',
-    '192.168.0.232'
+    '.kxxt.tech'
 ]
 
 # Application definition
